@@ -1,16 +1,9 @@
 ---
 title: Conditional Access for Agent Identities in Microsoft Entra
 description: Learn how Conditional Access for Agent IDs in Microsoft Entra ID extends Zero Trust principles to AI agents, ensuring secure access and governance.
-
-ms.service: entra-id
-ms.subservice: conditional-access
 ms.topic: concept-article
-ms.date: 11/05/2025
+ms.date: 03/24/2026
 ms.custom: agent-id-ignite
-
-ms.author: sarahlipsey
-author: shlipsey3
-manager: dougeby
 ms.reviewer: kvenkit
 ---
 # Conditional Access for Agent ID (Preview)
@@ -94,7 +87,7 @@ Creating a Conditional Access policy for agents involves these four key componen
 
 There are two key business scenarios where Conditional Access policies can help you manage agents effectively.
 
-In the first scenario, you may want to ensure that only approved agents can access specific resources. You can do this by tagging agents and resources with custom security attributes targeted in your policy, or by manually selecting them using the enhanced object picker.
+In the first scenario, you might want to ensure that only approved agents can access specific resources. You can do this by tagging agents and resources with custom security attributes targeted in your policy, or by manually selecting them using the enhanced object picker.
 
 In the second scenario, Conditional Access uses [signals from Microsoft Entra ID Protection](/entra/id-protection/concept-risky-agents) to detect and block agents exhibiting risky behavior from accessing resources.
 
@@ -116,7 +109,7 @@ The recommended approach for the first scenario is to create and assign custom s
    1. Create an **Attribute set** named *ResourceAttributes*.
    1. Create **New attributes** named *Department* that **Allow multiple values to be assigned** and **Only allow predefined values to be assigned**.
       1. Add the following predefined values: **Finance**, **HR**, **IT**, **Marketing**, **Sales**.
-1. Assign the appropriate value to resources that your agent is allowed to access. For example, you may want only agents that are **HR_Approved** to be able to access resources that are tagged **HR**.
+1. Assign the appropriate value to resources that your agent is allowed to access. For example, you might want only agents that are **HR_Approved** to be able to access resources that are tagged **HR**.
 
 ###### Create Conditional Access policy
 
@@ -139,12 +132,6 @@ After you complete the previous steps, create a Conditional Access policy using 
 1. Under **Target resources**, select the following options: 
    1. Select what this policy applies to **Resources (formerly cloud apps)**.
       1. Include **All resources (formerly 'All cloud apps')**
-      1. Exclude **Select resources**.
-         1. Select **Select resources based on attributes**.
-         1. Set **Configure** to **Yes**.
-         1. Select the Attribute we created earlier called **Department**.
-         1. Set **Operator** to **Contains**.
-         1. Set **Value** to **HR**.
 1. Under **Access controls** > **Grant**: 
    1. Select **Block**.
    1. Select **Select**.
@@ -175,11 +162,6 @@ The enhanced object picker replaces the previous flat list experience in both th
 1. Under **Target resources**, select the following options: 
    1. Select what this policy applies to **Resources (formerly cloud apps)**.
       1. Include **All resources (formerly 'All cloud apps')**
-      1. Exclude **Select resources**.
-         1. Select **Select specific resources**.
-         1. Using the enhanced object picker, switch between the tabs **All**, **Enterprise applications**, and **Agent blueprints** to select individual resources.
-            :::image type="content" source="media/agent-id/enhanced-object-picker.png" alt-text="Screenshot of the enhanced object picker with tabs for All, Enterprise applications, and Agent blueprints, showing resource selection options." lightbox="media/agent-id/enhanced-object-picker.png":::
-         1. Select **Select**.
 1. Under **Access controls** > **Grant**: 
    1. Select **Block**.
    1. Select **Select**.
