@@ -8,8 +8,6 @@ items:
     href: identity-governance-overview.md
   - name: Governing Agent IDs (Preview)
     href: agent-ID-governance-overview.md    
-
-
 - name: Scenarios
   expanded: true
   items:
@@ -78,9 +76,7 @@ items:
       - name: Automate the review process
         items: 
         - name: Govern auditing and access reviews for guest users
-          href: /graph/tutorial-accessreviews-m365group?toc=/entra/id-governance/toc.json&bc=/entra/id-governance/breadcrumb/toc.json
-
-  
+          href: /graph/tutorial-accessreviews-m365group?toc=/entra/id-governance/toc.json&bc=/entra/id-governance/breadcrumb/toc.json  
   - name: Govern access to applications
     items:
     - name: Get started with governing application access
@@ -191,7 +187,6 @@ items:
         href: custom-entitlement-report-with-adx-and-entra-id.md
       - name: Customized reports with other sources
         href: custom-entitlement-report-with-other-sources.md
-
 - name: Concepts
   expanded: true
   items:
@@ -344,7 +339,6 @@ items:
         href: entitlement-management-request-access.md
   - name: Access reviews
     items: 
-
     - name: Plan access review deployment
       href: deploy-access-reviews.md
     - name: Create access review history report
@@ -359,7 +353,6 @@ items:
           href: entitlement-management-access-reviews-create.md
         - name: Review access
           href: self-access-review.md 
-
     - name: Groups and apps
       items:
       - name: Prepare for an app access review
@@ -483,4 +476,3 @@ items:
       href: tutorial-prepare-user-accounts.md 
     - name: Configure a Logic App for Lifecycle Workflow use
       href: configure-logic-app-lifecycle-workflows.md
-      
