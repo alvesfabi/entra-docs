@@ -35,7 +35,7 @@ Microsoft provides [security defaults](~/fundamentals/security-defaults.md) that
       - [Security Reader](~/identity/role-based-access-control/permissions-reference.md#security-reader)
    - Create, modify, or restore soft-deleted Conditional Access policies.
       - [Conditional Access Administrator](~/identity/role-based-access-control/permissions-reference.md#conditional-access-administrator)
-- A test user (not an admin) to check that policies work as expected before deploying to real users. If you need to create a user, see [Quickstart: Add new users to Microsoft Entra ID](~/fundamentals/how-to-create-delete-users.yml).
+- A test user (not an admin) to check that policies work as expected before deploying to real users. If you need to create a user, see [Quickstart: Add new users to Microsoft Entra ID](~/fundamentals/how-to-create-delete-users.md).
 - A group that includes the test user. If you need to create a group, see [Create a group and add members in Microsoft Entra ID](/entra/fundamentals/how-to-manage-groups).
 
 ### Communicate change
@@ -65,7 +65,7 @@ Here are common questions about [assignments and access controls](concept-condit
 - Which users, groups, directory roles, or workload identities are included in or excluded from the policy?
 - What emergency access accounts or groups should you exclude from the policy?
 
-#### Cloud apps or actions
+#### Target resources
 
 Does this policy apply to an application, user action, or authentication context? If so:
 

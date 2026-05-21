@@ -3,6 +3,7 @@ title: Microsoft Entra licensing
 description: This article documents licensing requirements for Microsoft Entra features.
 ms.topic: concept-article
 ms.date: 12/01/2025
+#Customer Intent: As an IT admin, I want to understand Microsoft Entra licensing so that I can choose the right license tier for my organization's needs.
 ---
 
 # Microsoft Entra licensing
@@ -35,7 +36,7 @@ This article discusses licensing options for the Microsoft Entra product family.
 
 ## Microsoft Entra Agent ID
 
-[!INCLUDE [entra-agent-id-license-note](../includes/entra-agent-id-license-note.md)]
+[!INCLUDE [Microsoft Entra Agent ID](../includes/licensing-agent-id.md)]
 
 ## Microsoft Entra ID Governance
 

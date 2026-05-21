@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 12/04/2025
 ms.reviewer: elkuzmen
 ms.custom: ge-structured-content-pilot, sfi-ga-nochange
+#Customer Intent: As an IT admin, I want to add a custom domain to my Microsoft Entra tenant so that I can use my organization's domain name for user accounts.
 ---
 
 # Add your custom domain name to your tenant
@@ -102,5 +103,5 @@ If you can't verify a custom domain name, try the following suggestions:
 ## Related content
 
 - [How to assign roles and administrators](./how-subscriptions-associated-directory.md)
-- [How to add or delete users](./how-to-create-delete-users.yml)
+- [How to add or delete users](./how-to-create-delete-users.md)
 - [Managing custom domain names](~/identity/users/domains-manage.md)

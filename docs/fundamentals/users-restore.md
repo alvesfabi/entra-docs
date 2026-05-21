@@ -5,6 +5,7 @@ ms.topic: how-to
 ms.date: 03/05/2025
 ms.reviewer: jeffsta
 ms.custom: ge-structured-content-pilot, sfi-image-nochange
+#Customer Intent: As an IT admin, I want to restore or permanently remove recently deleted users so that I can manage user lifecycle in my directory.
 ---
 
 # Restore or remove a recently deleted user
@@ -60,7 +61,7 @@ When a user account is deleted from the organization, the account is in a suspen
 You can permanently delete a user from your organization without waiting the 30 days for automatic deletion. A permanently deleted user can't be restored by anyone, including Microsoft customer support.
 
 > [!NOTE]
-> If you permanently delete a user by mistake, you have to create a new user and manually enter all the previous information. For more information about creating a new user, see [Add or delete users](./how-to-create-delete-users.yml).
+> If you permanently delete a user by mistake, you have to create a new user and manually enter all the previous information. For more information about creating a new user, see [Add or delete users](./how-to-create-delete-users.md).
 
 ### To permanently delete a user
 
@@ -72,6 +73,6 @@ You can permanently delete a user from your organization without waiting the 30 
 
 ## Related content
 
-- [Add or delete users](./how-to-create-delete-users.yml)
+- [Add or delete users](./how-to-create-delete-users.md)
 - [Assign roles to users](./how-subscriptions-associated-directory.md)
 - [Add or change profile information](./how-to-manage-user-profile-info.md)
